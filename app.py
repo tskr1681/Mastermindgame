@@ -25,11 +25,11 @@ def game_():
 
     color_code={
         1: 'yellow',
-        2: 'red',
-        3: 'blue',
-        4: 'rgb(255,255,255)',
-        5: 'SeaGreen',
-        6: 'LightSlateGrey',
+        2: 'rgb(102, 0, 204)',
+        3: 'red',
+        4: 'rgb(0,102,0)',
+        5: 'rgb(255, 204, 255)',
+        6: 'rgb(0, 0, 255)',
     }
 
     code = (game.codemaker.code)
