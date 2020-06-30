@@ -24,9 +24,9 @@ def game_():
     game.play()
 
     color_code={
-        1: 'rgb(0,0,255)',
-        2: 'rgb(0,255,0)',
-        3: 'rgb(255,0,0)',
+        1: 'yellow',
+        2: 'red',
+        3: 'blue',
         4: 'rgb(255,255,255)',
         5: 'SeaGreen',
         6: 'LightSlateGrey',
