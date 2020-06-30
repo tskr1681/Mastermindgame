@@ -10,6 +10,14 @@
 
 
         <style>
+        body{
+        font-family: "Times New Roman";
+        }
+        
+        h1, h2, h3, h4, h5, h6{
+        font-family: "Times New Roman";
+        }
+        
             .dot {
                 height: 25px;
                 width: 25px;
@@ -25,10 +33,33 @@
 
             div {
                 padding-top: 10px;
-                padding-right: 10%;
                 padding-bottom: 50px;
-                padding-left: 10%;
+                max-width: 900px;
+                width: 92%;
+                margin: 0 auto;
             }
+            
+            div.full-width{
+            max-width: unset;
+            width: 100%;
+            
+            }
+            
+            .header{
+            background-color: black;
+            color: #757575!important;
+            }
+            
+            .game-section{
+            border: 2px solid black;
+            }
+            
+            .btn-black{
+            background-color: black;
+            color: #757575!important;
+            }
+            
+            
 
 
         </style>
@@ -37,16 +68,17 @@
 
 
     <body>
-        <div style="text-align:center">
-            <h1 class="w3-jumbo w3-text-grey">MasterMind</h1>
+        <div style="text-align:center" class="header full-width">
+            <h1 class="w3-jumbo w3-text-grey">Mastermind</h1>
             <h1 class="w3-xxlarge w3-text-grey">The Game</h1>
-            <h1 class="w3-large w3-text-grey"><b>Deesp | Sai Krishna</b></h1>
+            <h1 class="w3-large w3-text-grey">   Deepshi Garg | Skr Thiyyagura </h1>           
         </div>
+        
         <div class="w3-row">
             <div style="text-align:center">
                 <h1 class="w3-xxlarge">Introduction</h1>
             </div>
-            <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+            <div class="w3-xmedium w3-text-black">
               <p class="">
               <p>The game Mastermind has two players :</p>
               <ul>
@@ -74,10 +106,10 @@
 
             
 
-            <div style="text-align:center">
-                <button class="w3-btn" style="background-color:rgb(250, 226, 222)" onclick="window.location.reload();">New Game</button>
+            <div style="text-align:center" class="game-section">
+                <button class="w3-btn btn-black" onclick="window.location.reload();">New Game</button>
             <!-- <button class="w3-btn" style="background-color:rgb(154, 166, 231)" onclick="myFunction()">Try it</button> -->
-            <button class="w3-btn" style="background-color:rgb(250, 226, 222)" onclick="myFunction2()">Show Logs</button>
+            <button class="w3-btn btn-black " onclick="myFunction2()">Show Logs</button>
                 <div id="myTable">
                 
                     <span class="dot" style="--c: {{ color[code[0]] }}"></span>
@@ -125,10 +157,10 @@
                     <h1 class="w3-xxlarge">Epistemic Logic Application</h1>
    
                 </div>
-                <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+                <div class="w3-xmedium w3-text-black">
                   <p class="">            <p>We can use Kripke Models, bound within S5 Axiom System, to analyse the logical aspects of the two agents (players) present in the game here.</p>
                   <p>We have the following 6 colors available.</p>
-                  <p><img src="https://github.com/tskr1681/Mastermindgame/blob/master/resources/code.jpg" width="200"></p>
+                  <p><img src="https://raw.githubusercontent.com/deepshig/mastermind/master/resources/all_colors.jpg" width="200"></p>
                   <p>Code-maker needs to chose a secret code of length 4, with no duplicates. Suppose the secret code chosen by the code-maker be :</p>
                   <p><img src="https://raw.githubusercontent.com/deepshig/mastermind/master/resources/code.jpg" width="140"></p>
                   <p>Talking in terms of Kripke Model, we can say that :</p>
@@ -185,7 +217,7 @@
                     <h1 class="w3-xxlarge">Higher Order Knowledge</h1>
                 
                 </div>
-                <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+                <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            <p>Now, when the game proceeds, code-breaker makes guesses and code-maker provides feedback by analysing them with respect tot he secret code.</p>
                   <p>Accounting this in terms of public announcement logic, the feedback is a truthful public announcement. It allows code-breaker to narrow down the possible worlds and make a viable next guess.</p>
                   <p>For example, given the above code, if player 2 makes the following guess :</p>
@@ -223,7 +255,7 @@
 
                
                 </div>
-                <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+                <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
                     <p>We monitor the common knowledge, and individual knowledge accummulated by both the agents throughout the game.</p>
                     <ul>
@@ -277,7 +309,7 @@
                 <div style="text-align:center">
                     <h1 class="w3-xxlarge">Stratagies</h1>
                 </div>
-                <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+                <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
                     <p>We have implemented three strategies for the code-breaker here. They are explained below :</p>
                         <h3 id="1-mathematician-code-breaker">1. Mathematician Code Breaker</h3>
@@ -324,7 +356,7 @@
                 <div style="text-align:center">
                     <h1 class="w3-xxlarge">Simulations</h1>
                 </div>
-                <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+                <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
                     <p>We run 20 game simulations.</p>
                     <p>For every game, a new code is generated, and a new knowledge model is created. A code-breaker for each of the above stated three strategies is given a chance to play the game, and the winner is recorded.</p>
@@ -337,7 +369,7 @@
                 <div style="text-align:center">
                     <h1 class="w3-xxlarge">Project Implementation</h1>
                 </div>
-                <div class="w3-threequarter w3-container w3-xmedium w3-text-black">
+                <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
                     <p>We have implemented the game in python.</p>
                     <p>We have two classes, one each for code-maker and the code-breaker. Although, code-breaker is available in three variants according to the three strategies decribed above. When a game starts, code-breaker class initialises by randomly generating a code. Code-breaker attempts to guess this code within 3 moves. Code-maker analyses each of these moves and generates a feedback, which is passed onto the code-breaker.</p>
@@ -375,3 +407,4 @@
 
     </body>
 </html> 
+
