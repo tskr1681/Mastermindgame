@@ -32,8 +32,7 @@
             }
 
             div {
-                padding-top: 10px;
-                padding-bottom: 50px;
+                margin-bottom: 10px;
                 max-width: 900px;
                 width: 92%;
                 margin: 0 auto;
@@ -48,16 +47,29 @@
             .header{
             background-color: black;
             color: #757575!important;
+            padding: 20px 0;
             }
             
             .game-section{
             border: 2px solid black;
+            padding: 15px 0;
             }
             
             .btn-black{
             background-color: black;
             color: #757575!important;
             }
+            
+            .inter-word{
+            text-justify: inter-word;
+            }
+            
+            .img-wrapper{
+            text-align: center;
+            }
+            
+            .img-fluid{
+            margin: 0 auto;
             
             
 
@@ -90,7 +102,7 @@
               <li>Length of code/guess should be 4.</li>
               <li>There should be 4 different colors. Repetition of colors within a code/guess is not allowed.</li>
               </ul>
-              <p>Once code-maker decides over a secret code, code-breaker attempts to guess it. Each move consists of a guess by code-breaker. Code-maker analyses this move, and generates a feedback based on its equivalency to the secret code. This feedback is in accordance with the following rules :</p>
+              <p class="inter-word">Once code-maker decides over a secret code, code-breaker attempts to guess it. Each move consists of a guess by code-breaker. Code-maker analyses this move, and generates a feedback based on its equivalency to the secret code. This feedback is in accordance with the following rules :</p>
               <ul>
               <li>It has 4 elements.</li>
               <li>If element value = 1  : It means the color and position both are correctly guessed for the element at this position.</li>
@@ -160,7 +172,7 @@
                 <div class="w3-xmedium w3-text-black">
                   <p class="">            <p>We can use Kripke Models, bound within S5 Axiom System, to analyse the logical aspects of the two agents (players) present in the game here.</p>
                   <p>We have the following 6 colors available.</p>
-                  <p><img src="https://raw.githubusercontent.com/deepshig/mastermind/master/resources/all_colors.jpg" width="200"></p>
+                  <div class="img-wrapper"><img src="https://raw.githubusercontent.com/deepshig/mastermind/master/resources/all_colors.jpg" width="200" class="img-fluid"></div>
                   <p>Code-maker needs to chose a secret code of length 4, with no duplicates. Suppose the secret code chosen by the code-maker be :</p>
                   <p><img src="https://raw.githubusercontent.com/deepshig/mastermind/master/resources/code.jpg" width="140"></p>
                   <p>Talking in terms of Kripke Model, we can say that :</p>
