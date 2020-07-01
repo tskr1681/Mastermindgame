@@ -59,7 +59,7 @@
             background-color: black;
             color: silver !important;
 
-            font-size: 16px;
+            font-size: 18px;
     
             }
             
@@ -125,7 +125,7 @@
             
 
             <div style="text-align:center" class="game-section">
-                <button class="w3-btn btn-black" onclick="window.location.reload();"><b>New Game</b></button>
+                <button class="w3-btn btn-black" onclick="window.location.reload();">New Game</button>
             <!-- <button class="w3-btn" style="background-color:rgb(154, 166, 231)" onclick="myFunction()">Try it</button> -->
             <button class="w3-btn btn-black " onclick="myFunction2()">Show Logs</button>
                 <div id="myTable">
@@ -177,7 +177,7 @@
                 </div>
                 <div class="w3-xmedium w3-text-black">
                   <p class="">            <p>We can use Kripke Models, bound within S5 Axiom System, to analyse the logical aspects of the two agents (players) present in the game here.</p>
-                  <p>We have the following 6 colors available.</p>
+                  <p>We have the following 6 colors available: </p>
                   <div class="img-wrapper"><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/all_colors.jpg" width="200" class="img-fluid"></div>
                   <p>Code-maker needs to chose a secret code of length 4, with no duplicates. Suppose the secret code chosen by the code-maker be :</p>
                   <div class="img-wrapper"><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/code.jpg" width="140" class="img-fluid"></div>
@@ -198,7 +198,7 @@
                   </li>
                   </ul>
                   <p>For example, if we consider a few relations and a few worlds, following Kripke Model is acheived :</p>
-                  <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/example_model.jpg" width="350"></p>
+                  <div class="img-wrapper"><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/example_model.jpg" width="350"class="img-fluid"></div>
                   <p>Here :</p>
                   <ul>
                   <li>Agent 1 is the code-maker and agent 2 is the code-breaker.</li>
@@ -208,7 +208,7 @@
                   <li>R2 are the knowledge relations for agent 2.</li>
                   </ul>
                   <p>Here, colors are the propositional variables. In each world, the possible code decides which propositions are true. For example, for the real world :</p>
-                  <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/code.jpg" width="140"></p>
+                  <div class="img-wrapper"><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/code.jpg" width="140" class="img-fluid"></div>
                   <p>Following is the <code>pi</code> value of this world :</p>
                   <ul>
                   <li>green = true</li>
@@ -239,7 +239,7 @@
                   <p class=""><p>            <p>Now, when the game proceeds, code-breaker makes guesses and code-maker provides feedback by analysing them with respect to the secret code.</p>
                   <p>Accounting this in terms of public announcement logic, the feedback is a truthful public announcement. It allows code-breaker to narrow down the possible worlds and make a viable next guess.</p>
                   <p>For example, given the above code, if player 2 makes the following guess :</p>
-                  <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_1.jpg" width="140"></p>
+                  <div class="img-wrapper"><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_1.jpg" width="140" class="img-fluid"></div>
                   <p>Player 1 provides the following feedback : <code>[0 1 1 -1]</code></p>
                   <p>This means that:</p>
                   <ul>
@@ -252,13 +252,13 @@
                   <p>Thus, after these announcements, the Kripke Model gets restricted as follows :</p>
                   <ul>
                   <li><p>Second and third colors have to be yellow and red respectively. All the worlds with other possibilities for second and third colors are eliminated. Following worlds would be possible :</p>
-                  <p>  <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/possible_worlds1.jpg" width="275"></p>
+                  <div class="img-wrapper"> <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/possible_worlds1.jpg" width="275 class="img-fluid"></div>
                   </li>
                   <li><p>Blue needs to be somewhere other than the first position. But since second and third position are already occupied, blue can only occur at fourth position. This eliminates all the worlds with any other color on fourth position, or blue color in any other position. Following worlds would be possible :</p>
-                  <p>  <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/possible_worlds2.jpg" width="400"></p>
+                  <div class="img-wrapper">  <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/possible_worlds2.jpg" width="400" class="img-fluid"></div>
                   </li>
                   <li><p>Only place left vacant is the first one. This position is occupied by any color other than pink. Thus, all the worlds with pink in any place on the code are eliminated. Following worlds would be possible :</p>
-                  <p>  <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/possible_worlds3.jpg" width="250"></p>
+                  <div class="img-wrapper">  <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/possible_worlds3.jpg" width="250" class="img-fluid"></div>
                   </li>
                   </ul>
                   <p>Both the agents are aware of this elimination process, and it becomes common knowledge in the system. Based on the derived system, Player 2 can now make a second guess. Player 1 would again analyse it and provide feedback. Similar procedure would be followed and the game continues.</p>
@@ -283,7 +283,7 @@
                     </ul>
                     <p>Common Knowledge is collectively available to both agents, however <code>agent1</code> knowledge and <code>agent2</code> knowledge is only available to the respective agents indivdually. We have <code>agent1</code> as the code-maker, and <code>agent2</code> as the code-breaker.</p>
                     <p><code>Agent1</code> individual knowledge is only updated once, when he generates the code. For example, if the following code is generated :</p>
-                    <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/code.jpg" width="140"></p>
+                    <div class="img-wrapper"> <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/code.jpg" width="140" class="img-fluid"></div>
                     <p><code>agent1</code> knowledge is updated accordingly. He knows for the sure the correct position of all the colors in the code, thus he adds a knowledge proposition for each of them to his individual knowledge base.</p>
                     <ul>
                     <li><code>Green</code> at position 1 : <code>1:green</code></li>
@@ -292,7 +292,7 @@
                     <li><code>Blue</code> at position 4 : <code>4:blue</code></li>
                     </ul>
                     <p>However, the common knowledge ant <code>agent2</code> knowledge are updated with every move and feedback generated therein. For example, suppose we get the feedback <code>[0 1 1 -1]</code> for the following move :</p>
-                    <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_1.jpg" width="140"></p>
+                    <div class="img-wrapper"> <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_1.jpg" width="140" class="img-fluid"></div>
                     <p>Since the feedback is a public announcement in the game, we get the following agent knowledge propositions :</p>
                     <ul>
                     <li>For first color <code>blue</code> with feedback <code>0</code> :<ul>
@@ -330,10 +330,10 @@
                 <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
                     <p>We have implemented three strategies for the code-breaker here. They are explained below :</p>
-                        <h3 id="1-mathematician-code-breaker">1. Mathematician Code Breaker</h3>
+                        <h3 id="1-mathematician-code-breaker">i. Mathematician Code Breaker</h3>
                         <p>Under this strategy, the code-breaker analyses the feedback on each of his previous moves to generate the next move. However, information learnt from older moves is not maintained. Only the immediately last move is examined with the feedback obtained, and next move is generated.</p>
                         <p>For example, if the feedback obtained is <code>[0 1 0 -1]</code>,  for the following move :</p>
-                        <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_2.jpg" width="140"></p>
+                        <div class="img-wrapper"> <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_2.jpg" width="140" class="img-fluid"></div>
                         <p>For the next move, code-breaker knows that :</p>
                         <ul>
                         <li>Yellow is perfectly correct, and need not be changed.</li>
@@ -350,7 +350,7 @@
                         <p>Here, code-breaker makes use of the knowledge model maintained in the game to make a decision about the next move. As we see in the <code>Game</code> class, knowledge model is updated after every move.</p>
                         <p>Every move, along with the feedback generated for it, is analysed, and the Kripke Model is solved for it. The feedback acts as public announement, and thus the worlds which do not satisfy it are eliminated.</p>
                         <p>For example, if the feedback obtained is <code>[0 1 0 -1]</code>,  for the following move :</p>
-                        <p><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_2.jpg" width="140"></p>
+                        <div class="img-wrapper"> <img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/guess_2.jpg" width="140"class="img-fluid"></div>
                         <p>In the available Kripke model :</p>
                         <ul>
                         <li>Worlds where second color is not yellow will be eliminated.</li>
