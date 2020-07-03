@@ -176,7 +176,7 @@
    
                 </div>
                 <div class="w3-xmedium w3-text-black">
-                  <p class="">            <p>We can use Kripke Models, bound within S5 Axiom System, to analyse the logical aspects of the two agents (players) present in the game here.</p>
+                  <p class="">            <p>Kripke Models can be used, bound within S5 Axiom System, to analyse the logical aspects of the two agents (players) present in the game here.</p>
                   <p>We have the following 6 colors available: </p>
                   <div class="img-wrapper"><img src="https://raw.githubusercontent.com/tskr1681/Mastermindgame/master/resources/all_colors.jpg" width="200" class="img-fluid"></div>
                   <p>Code-maker needs to chose a secret code of length 4, with no duplicates. Suppose the secret code chosen by the code-maker be :</p>
@@ -275,7 +275,7 @@
                 </div>
                 <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
-                    <p>We monitor the common knowledge, and individual knowledge accummulated by both the agents throughout the game.</p>
+                    <p>The common knowledge, and individual knowledge accummulated by both the agents throughout the game are monitored</p>
                     <ul>
                     <li>A knowledge proposition known with surety is expressed as <code>&lt;position&gt;:&lt;color&gt;</code>.</li>
                     <li>A negation known with surety is expressed as <code>~(&lt;position&gt;:&lt;color&gt;)</code>.</li>
@@ -376,9 +376,9 @@
                 </div>
                 <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
-                    <p>We run 20 game simulations.</p>
+                    <p>20 game simulations have been run.</p>
                     <p>For every game, a new code is generated, and a new knowledge model is created. A code-breaker for each of the above stated three strategies is given a chance to play the game, and the winner is recorded.</p>
-                    <p>The score about the number of games won by each of the 3 code-breaker strategies are recorded in the table below.</p>
+                    <p>The score about the number of games won by each of the 3 code-breaker strategies are recorded in the table below:</p>
                  <style type="text/css" >
 .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
 .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
@@ -445,8 +445,8 @@
                 </div>
                 <div class="w3-xmedium w3-text-black">
                   <p class=""><p>            
-                    <p>We have implemented the game in python.</p>
-                    <p>We have two classes, one each for code-maker and the code-breaker. Although, code-breaker is available in three variants according to the three strategies decribed above. When a game starts, code-breaker class initialises by randomly generating a code. Code-breaker attempts to guess this code within 3 moves. Code-maker analyses each of these moves and generates a feedback, which is passed onto the code-breaker.</p>
+                    <p>The game has been implemented in python.</p>
+                    <p>There are two classes, one each for code-maker and the code-breaker. Although, code-breaker is available in three variants according to the three strategies decribed above. When a game starts, code-breaker class initialises by randomly generating a code. Code-breaker attempts to guess this code within 3 moves. Code-maker analyses each of these moves and generates a feedback, which is passed onto the code-breaker.</p>
                     <p>We use a knowledge-manager class to represent the Kripke Model (possible worlds and their relations) according to the current state of the game. There is also an agent-knowledge class which maintains the commong knowledge and individual knowledge propositions for both agents at every state of the game.</p>
                     <p>The game class takes the responsibility to bring all these features together, and conduct a game. In each move, code-breaker makes a guess, and code-maker provides feedback. The knowledge base in Kripke model and agent knowledge is updated accordingly. We have three strategies in place for code-breaker, however the game by default runs for mathematician code-breaker.</p>
                     <p>Strategy analyser class provides an interface to run simulation games to compare the three strategies available.</p>
